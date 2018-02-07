@@ -115,9 +115,11 @@ class Bots extends Component {
                             }}>
                               Website
                             </a>
-                            <a className="button" href={bot.twitter}>
-                              Twitter
-                            </a>
+                            {(bot.twitter !== undefined && bot.twitter.length > 0) && (
+                              <a className="button" href={bot.twitter}>
+                                Twitter
+                              </a>
+                            )}
                           </p>
                         </div>
                       </div>
