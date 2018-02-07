@@ -141,9 +141,6 @@ class Index extends Component {
   render() {
     return (
       <div>
-        <Helmet>
-          <title>The Best Discord Music Bots | discordmusicbots.com</title>
-        </Helmet>
         <Bots bots={this.props.bots} />
       </div>
     )
