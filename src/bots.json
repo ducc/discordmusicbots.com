@@ -1,0 +1,54 @@
+[
+    {
+        "id":"270198738570444801",
+        "name":"dabBot",
+        "image":"https://images.discordapp.net/avatars/270198738570444801/70e848794770b131a6a846b076003739.png?size=512",
+        "description":"A high quality Discord Music Bot providing music from YouTube, Soundcloud, Twitch, Radio Stations, Discord.FM and much more!",
+        "tags":[
+            "Radio",
+            "Youtube",
+            "Soundcloud",
+            "Twitch",
+            "Discord.FM",
+            "Playlists"
+        ],
+        "invite":"https://dabbot.org/invite",
+        "support":"https://dabbot.org/support",
+        "website":"https://dabbot.org",
+        "twitter":"https://twitter.com/dabbbot"
+    },
+    {
+        "id":"184405253028970496",
+        "name":"FredBoat",
+        "image":"https://images.discordapp.net/avatars/184405311681986560/f20c8d9639cd674652254af0ffd3e9d2.png?size=512",
+        "description":"FredBoat is a free Discord music bot that delivers high-quality music to your Discord server. Zero configuration required.",
+        "tags":[
+            "Youtube",
+            "Soundcloud",
+            "Twitch",
+            "Playlists"
+        ],
+        "invite":"https://goo.gl/cFs5M9",
+        "support":"https://discord.gg/cgPFW4q",
+        "website":"https://docs.fredboat.com/",
+        "twitter":"https://twitter.com/DiscordFredBoat"
+    },
+    {
+        "id":"235088799074484224",
+        "name":"Rythm",
+        "image":"https://images.discordapp.net/avatars/235088799074484224/86dd4605e419359463b3d1e808b90396.png?size=512",
+        "description":"Ever wanted a bot specially made for music? A fully functional, stable music bot? Rythm does it all",
+        "tags":[
+            "Youtube",
+            "Soundcloud",
+            "Twitch",
+            "Playlists",
+            "Dashboard",
+            "Lyrics"
+        ],
+        "invite":"https://rythmbot.co/invite",
+        "support":"https://rythmbot.co/support",
+        "website":"https://rythmbot.co/",
+        "twitter":""
+    }
+]
