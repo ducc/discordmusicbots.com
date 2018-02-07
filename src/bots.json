@@ -65,5 +65,17 @@
         "support":"https://botz.mattcowley.co.uk/musicalbot/support",
         "website":"https://botz.mattcowley.co.uk/musicalbot",
         "twitter":""
+    },
+    {
+        "id":"336961510276595722",
+        "name":"NotSoPhone",
+        "image":"https://cdn.discordapp.com/avatars/336961510276595722/69e23d8e015349e327f53987461bcef0.png?size=1024",
+        "description":"A high quality Discord Bot that can call phones for actual money! The person you call can play music to you, so this is technically a music bot!",
+        "tags":[
+            "Phone"
+        ],
+        "invite":"https://notsophone.com/invite",
+        "support":"https://notsophone.com/discord",
+        "website":"https://notsophone.com"
     }
 ]
