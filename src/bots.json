@@ -10,7 +10,9 @@
             "Soundcloud",
             "Twitch",
             "Discord.FM",
-            "Playlists"
+            "Playlists",
+            "Mp3",
+            "Http"
         ],
         "invite":"https://dabbot.org/invite",
         "support":"https://dabbot.org/support",
@@ -49,6 +51,19 @@
         "invite":"https://rythmbot.co/invite",
         "support":"https://rythmbot.co/support",
         "website":"https://rythmbot.co/",
+        "twitter":""
+    },
+    {
+        "id":"298754678936698880",
+        "name":"MusicalBot",
+        "image":"https://botz.mattcowley.co.uk/musicalbot/img",
+        "description":"A simple to operate musical streaming bot! ",
+        "tags":[
+            "Musicals"
+        ],
+        "invite":"https://botz.mattcowley.co.uk/musicalbot/invite",
+        "support":"https://botz.mattcowley.co.uk/musicalbot/support",
+        "website":"https://botz.mattcowley.co.uk/musicalbot",
         "twitter":""
     }
 ]
