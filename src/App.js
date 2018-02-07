@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 
 import './bulma.css'
 
@@ -136,17 +137,15 @@ class Bots extends Component {
   }
 }
 
-function title(title) {
-  title = title.charAt(0).toUpperCase() + title.substring(1)
-  document.title = title + " Discord Music Bots"
-}
-
 class Index extends Component {
   render() {
-    title("The Best")
-
     return (
-      <Bots bots={this.props.bots} />
+      <div>
+        <Helmet>
+          <title>The Best Discord Music Bots | discordmusicbots.com</title>
+        </Helmet>
+        <Bots bots={this.props.bots} />
+      </div>
     )
   }
 }
@@ -155,14 +154,17 @@ class Tags extends Component {
   render() {
     let tag = this.props.match.params.tag;
     
-    title(tag)
-    
     let bots = this.props.bots
       .filter(bot => bot.tags.map(tag => tag.toLowerCase())
       .includes(tag));
 
     return (
-      <Bots bots={bots} />
+      <div>
+        <Helmet>
+          <title>{tag.charAt(0).toUpperCase() + tag.substring(1)} Discord Music Bots | discordmusicbots.com</title>
+        </Helmet>
+        <Bots bots={bots} />
+      </div>
     )
   }
 }
