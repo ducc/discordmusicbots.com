@@ -28,7 +28,7 @@ const Header = () => (
       <div className="hero-body">
         <div className="container has-text-centered">
           <h1 className="title">
-            <span role="img">🎶</span> Discord Music Bots <span role="img">🎶</span>
+            Discord Music Bots
           </h1>
           <h2 className="subtitle">
             discordmusicbots.com
