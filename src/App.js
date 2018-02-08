@@ -172,6 +172,7 @@ const Footer = () => (
       <div className="container">
         <div className="content">
           <p>Managed by spong#3338 (87164639695110144)</p>
+          <p><a href="https://github.com/ducc/discordmusicbots.com">GitHub</a></p>
           <p>Not affiliated with, endorsed, sponsored, or specifically approved by Discord Inc.</p>
         </div>
       </div>
