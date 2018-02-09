@@ -95,5 +95,21 @@
     "invite": "https://marv.land/invite",
     "support": "https://discord.gg/WmDyx7C",
     "website": "https://marv.land"
-}
-]
+},
+{
+    "id":"228537642583588864",
+    "name":"Vexera",
+    "image":"https://cdn.discordapp.com/avatars/228537642583588864/641ef03272d6eaa095ad0bdc83795d64.jpg?size=512",
+    "description": "A high quality music bot with memes, moderation and fun utilities. Provides music from Youtube, Twitch, Soundcloud and Mixer.",
+    "tags": [
+        "Youtube",
+        "Soundcloud",
+        "Twitch",
+        "Playlists",
+        "Lyrics"
+    ],
+    "invite":"https://vexera.io/invite",
+    "support":"https://vexera.io/support",
+    "website":"https://vexera.io",
+    "twitter":"https://twitter.com/VexeraDiscord"
+}]
