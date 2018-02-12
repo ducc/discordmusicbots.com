@@ -112,4 +112,15 @@
     "support":"https://vexera.io/support",
     "website":"https://vexera.io",
     "twitter":"https://twitter.com/VexeraDiscord"
+},
+{
+    "id": "174202555981758464",
+    "name": "JMusicBot",
+    "image": "https://images.discordapp.net/avatars/174202555981758464/ab3dcbc5f0c08c941fa15c0ed0742533.png?size=512",
+    "description": "A self-hostable music bot with support for many online and local sources, playlists, customization, and easy setup!",
+    "tags": [
+        "Self-hosted"
+    ],
+    "support": "https://discord.gg/0p9LSGoRLu6Pet0k",
+    "website": "https://github.com/jagrosh/MusicBot"
 }]
