@@ -123,4 +123,19 @@
     ],
     "support": "https://discord.gg/0p9LSGoRLu6Pet0k",
     "website": "https://github.com/jagrosh/MusicBot"
-}]
+},
+{
+    "id": "189702078958927872",
+    "name": "ErisBot",
+    "image": "https://cdn.discordapp.com/avatars/189702078958927872/a40290ebe1cb03885fd84e7c842c2a0f.png?size=512",
+    "description": "ErisBot is a large and stable bot, providing clean, crisp audio to hundreds of Discord guilds, along with easy to use commands, and a charm that is hard to beat",
+    "tags": [
+        "Youtube",
+        "Soundcloud"
+    ],
+    "invite": "https://erisbot.com/invite",
+    "support": "https://discord.gg/erisbot",
+    "website": "https://erisbot.com/",
+    "twitter": "https://twitter.com/erisbotofficial"
+}
+]
