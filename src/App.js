@@ -101,21 +101,21 @@ class Bots extends Component {
                             ))}
                           </div>
                           <p>
-                            {(bot.invite !== undefined && bot.twitter.length > 0) && (
+                            {(bot.invite !== undefined && bot.invite.length > 0) && (
                               <a className="button" href={bot.invite} style={{
                                 marginRight: "0.5em"
                               }}>
                                 Add to your server
                               </a>
                             )}
-                            {(bot.support !== undefined && bot.twitter.length > 0) && (
+                            {(bot.support !== undefined && bot.support.length > 0) && (
                               <a className="button" href={bot.support} style={{
                                 marginRight: "0.5em"
                               }}>
                                 Support server
                               </a>
                             )}
-                            {(bot.website !== undefined && bot.twitter.length > 0) && (
+                            {(bot.website !== undefined && bot.website.length > 0) && (
                               <a className="button" href={bot.website} style={{
                                 marginRight: "0.5em"
                               }}>
