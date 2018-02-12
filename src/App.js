@@ -101,21 +101,27 @@ class Bots extends Component {
                             ))}
                           </div>
                           <p>
-                            <a className="button is-info" href={bot.invite} style={{
-                              marginRight: "0.5em"
-                            }}>
-                              Add to your server
-                            </a>
-                            <a className="button" href={bot.support} style={{
-                              marginRight: "0.5em"
-                            }}>
-                              Support server
-                            </a>
-                            <a className="button" href={bot.website} style={{
-                              marginRight: "0.5em"
-                            }}>
-                              Website
-                            </a>
+                            {(bot.invite !== undefined && bot.twitter.length > 0) && (
+                              <a className="button" href={bot.invite} style={{
+                                marginRight: "0.5em"
+                              }}>
+                                Add to your server
+                              </a>
+                            )}
+                            {(bot.support !== undefined && bot.twitter.length > 0) && (
+                              <a className="button" href={bot.support} style={{
+                                marginRight: "0.5em"
+                              }}>
+                                Support server
+                              </a>
+                            )}
+                            {(bot.website !== undefined && bot.twitter.length > 0) && (
+                              <a className="button" href={bot.website} style={{
+                                marginRight: "0.5em"
+                              }}>
+                                Website
+                              </a>
+                            )}
                             {(bot.twitter !== undefined && bot.twitter.length > 0) && (
                               <a className="button" href={bot.twitter}>
                                 Twitter
