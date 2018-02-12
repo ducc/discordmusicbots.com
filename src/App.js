@@ -102,7 +102,7 @@ class Bots extends Component {
                           </div>
                           <p>
                             {(bot.invite !== undefined && bot.invite.length > 0) && (
-                              <a className="button" href={bot.invite} style={{
+                              <a className="button is-info" href={bot.invite} style={{
                                 marginRight: "0.5em"
                               }}>
                                 Add to your server
