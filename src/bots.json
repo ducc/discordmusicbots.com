@@ -154,5 +154,18 @@
     "invite": "https://discordapp.com/oauth2/authorize?client_id=326750725084282881&scope=bot&permissions=37088334",
     "support": "https://discord.gg/az4eraJ",
     "website": "https://astolfo.xyz/"
-}
-]
+},
+{
+    "id": "119482224713269248",
+    "name": "LewdBot",
+    "image": "https://cdn.discordapp.com/avatars/119482224713269248/c3d388d7fe60ed44f8ae7dfd3a06cbd3.png?size=512",
+    "description": "A multi-purpose (with) music bot which supports Youtube and SoundCloud, with playlists.",
+    "tags": [
+        "Youtube",
+        "Soundcloud"
+    ],
+    "invite": "https://goo.gl/PrPGky",
+    "support": "https://discord.gg/xj62CKK",
+    "website": "https://notfab.net/LewdBot",
+    "twitter": "https://twitter.com/adm_fabricio20"
+}]
