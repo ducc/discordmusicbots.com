@@ -137,5 +137,22 @@
     "support": "https://discord.gg/erisbot",
     "website": "https://erisbot.com/",
     "twitter": "https://twitter.com/erisbotofficial"
+},
+{
+    "id": "326750725084282881",
+    "name": "Astolfo",
+    "image": "https://cdn.discordapp.com/avatars/326750725084282881/4070385da02c1a99b9f8da5ffa627bc0.png?size=512",
+    "description": "A high quality music, listen.moe, radio, chat bot, games, casino, anime, mod bot that takes care of all the essentials!",
+    "tags": [
+        "Radio",
+        "Youtube",
+        "Soundcloud",
+        "Twitch",
+        "Playlists",
+        "Dashboard"
+    ],
+    "invite": "https://discordapp.com/oauth2/authorize?client_id=326750725084282881&scope=bot&permissions=37088334",
+    "support": "https://discord.gg/az4eraJ",
+    "website": "https://astolfo.xyz/"
 }
 ]
