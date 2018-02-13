@@ -162,7 +162,8 @@
     "description": "A multi-purpose (with) music bot which supports Youtube and SoundCloud, with playlists.",
     "tags": [
         "Youtube",
-        "Soundcloud"
+        "Soundcloud",
+        "Playlists"
     ],
     "invite": "https://goo.gl/PrPGky",
     "support": "https://discord.gg/xj62CKK",
