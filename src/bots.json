@@ -11,7 +11,8 @@
         "Discord.FM",
         "Playlists",
         "Mp3",
-        "Http"
+        "Http",
+        "Listen.moe"
     ],
     "invite": "https://dabbot.org/invite",
     "support": "https://dabbot.org/support",
@@ -149,7 +150,8 @@
         "Soundcloud",
         "Twitch",
         "Playlists",
-        "Dashboard"
+        "Dashboard",
+        "Listen.moe"
     ],
     "invite": "https://discordapp.com/oauth2/authorize?client_id=326750725084282881&scope=bot&permissions=37088334",
     "support": "https://discord.gg/az4eraJ",
@@ -176,15 +178,14 @@
     "image": "https://ayana.io/img/avatar.png",
     "description": "Powerful Multipurpose Music Bot for Discord. High Quality Music, Moderation, and Utilities",
     "tags": [
-        "Radio",
         "Youtube",
         "Soundcloud",
         "Twitch",
         "Playlists",
         "Listen.moe"
     ],
-    "invite": "https://ayana.io/invite",
-    "support": "https://ayana.io/support",
+    "invite": "https://ayana.io/invite?ref=dmb",
+    "support": "https://ayana.io/support?ref=dmb",
     "website": "https://ayana.io/?ref=dmb",
     "twitter": "https://twitter.com/AyanaDiscord"
 }]
