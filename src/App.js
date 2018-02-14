@@ -156,6 +156,7 @@ class Index extends Component {
 class Tags extends Component {
   render() {
     let tag = this.props.match.params.tag;
+    let tagUppercase = tag.charAt(0).toUpperCase() + tag.substring(1);
     
     let bots = this.props.bots
       .filter(bot => bot.tags.map(tag => tag.toLowerCase())
@@ -164,7 +165,7 @@ class Tags extends Component {
     return (
       <div>
         <Helmet>
-          <title>{tag.charAt(0).toUpperCase() + tag.substring(1)} Discord Music Bots | discordmusicbots.com</title>
+          <title>{tagUppercase} Discord Music Bots | discordmusicbots.com</title>
         </Helmet>
         <Bots bots={bots} />
       </div>
