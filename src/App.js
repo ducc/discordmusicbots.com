@@ -57,7 +57,7 @@ class Features extends Component {
               All features
             </NavLink>
             {[... new Set(flatMap(this.props.bots.map(bot => bot.tags), tags => tags).sort())].map(tag => (
-              <NavLink className="button" key={tag} to={"/tags/" + tag.toLowerCase()} style={{
+              <NavLink className="button" key={tag} to={"/" + tag.toLowerCase()} style={{
                 margin: "0 0.5em 0.5em 0"
               }}>
                 {tag}
@@ -195,7 +195,7 @@ export default () => (
           <Route exact path="/" render={props => 
             <Index {...props} bots={bots} />
           } />
-          <Route path="/tags/:tag" render={props => 
+          <Route path="/:tag" render={props => 
             <Tags {...props} bots={bots} />
           } />
         </div>
