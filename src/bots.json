@@ -169,4 +169,22 @@
     "support": "https://discord.gg/xj62CKK",
     "website": "https://notfab.net/LewdBot",
     "twitter": "https://twitter.com/adm_fabricio20"
+},
+{
+    "id": "185476724627210241",
+    "name": "Ayana",
+    "image": "https://ayana.io/img/avatar.png",
+    "description": "Powerful Multipurpose Music Bot for Discord. High Quality Music, Moderation, and Utilities",
+    "tags": [
+        "Radio",
+        "Youtube",
+        "Soundcloud",
+        "Twitch",
+        "Playlists",
+        "Listen.moe"
+    ],
+    "invite": "https://ayana.io/invite",
+    "support": "https://ayana.io/support",
+    "website": "https://ayana.io/?ref=dmb",
+    "twitter": "https://twitter.com/AyanaDiscord"
 }]
