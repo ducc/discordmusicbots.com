@@ -188,4 +188,20 @@
     "support": "https://ayana.io/support?ref=dmb",
     "website": "https://ayana.io/?ref=dmb",
     "twitter": "https://twitter.com/AyanaDiscord"
+},
+{
+    "id": "155149108183695360",
+    "name": "Dyno",
+    "image": "https://cdn.discordapp.com/avatars/178022286538964992/bbd8d31d69e882af938ddf4344fc71c8.png?size=512",
+    "description": "Dyno is a is a reliable, multi-purpose Discord bot that provides music streaming with great audio quality for your Discord server. Add it to your server today!",
+    "tags": [
+        "Youtube",
+        "Soundcloud",
+        "Playlists",
+        "Dashboard"
+    ],
+    "invite": "https://www.dynobot.net/invite?r=dmb",
+    "support": "https://www.dynobot.net/discord?r=dmb",
+    "website": "https://www.dynobot.net/?r=dmb",
+    "twitter": "https://twitter.com/DynoDiscord"
 }]
