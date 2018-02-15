@@ -204,4 +204,20 @@
     "support": "https://www.dynobot.net/discord?r=dmb",
     "website": "https://www.dynobot.net/?r=dmb",
     "twitter": "https://twitter.com/DynoDiscord"
+},
+{
+    "id": 213466096718708737,
+    "name": "Mantaro",
+    "image": "https://cdn.discordapp.com/avatars/213466096718708737/1dbce9ca83454e761bdb6a482354f8c0.png?size=512",
+    "description": "A high quality discord bot offering music, economy and fun!",
+    "tags": [
+        "Youtube",
+        "Soundcloud",
+        "Twitch",
+        "Playlists"
+    ],
+    "invite": "https://is.gd/mantaro",
+    "support": "https://is.gd/mantaroguild",
+    "website": "https://github.com/Mantaro/MantaroBot",
+    "twitter": "https://twitter.com/mantarodiscord"
 }]
