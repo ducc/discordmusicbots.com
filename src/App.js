@@ -191,15 +191,26 @@ export default () => (
   <Router>
     <div>
       <Header />
-        <div>
-          <Features bots={bots} />
-          <Route exact path="/" render={props => 
-            <Index {...props} bots={bots} />
-          } />
-          <Route path="/:tag" render={props => 
-            <Tags {...props} bots={bots} />
-          } />
+      <div>
+        <Features bots={bots} />
+        <Route exact path="/" render={props => 
+          <Index {...props} bots={bots} />
+        } />
+        <Route path="/:tag" render={props => 
+          <Tags {...props} bots={bots} />
+        } />
+      </div>
+      <section className="hero has-text-centered">
+        <div className="hero-body">
+          <div className="container">
+            <div className="content">
+              <h3>Looking for a discord bot that does more than music?</h3>
+              <p>Check out <a href="https://botlist.space">botlist.space</a> for bots providing moderation, games, economy and more!</p>
+            </div>
+          </div>
         </div>
+      </section>
+      <hr />
       <Footer />
     </div>
   </Router>
