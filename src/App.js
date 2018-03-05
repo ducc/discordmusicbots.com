@@ -71,6 +71,57 @@ class Features extends Component {
   }
 }
 
+class BotHeader extends Component {
+  constructor(props) {
+    super(props)
+    this.bot = this.props.bot
+    console.log("bot: " + JSON.stringify(this.bot))
+  }
+
+  render() {
+    return (
+      <div className="columns">
+        <div className="column is-narrow">
+          <img src={this.bot.image} alt={this.bot.name + "'s avatar"} style={{ height: "144px" }} />
+        </div>
+        <div className="column">
+          <div className="content">
+            <NavLink to={"/bots/" + this.bot.name.toLowerCase()}><h3>{this.bot.name}</h3></NavLink>
+            <p>{this.bot.description}</p>
+            <div className="tags">
+              {this.bot.tags.sort().map(tag => (
+                <span className="tag" key={tag}>{tag}</span>
+              ))}
+            </div>
+            <p>
+              {(this.bot.invite !== undefined && this.bot.invite.length > 0) && (
+                <a className="button is-info" href={this.bot.invite} style={{ marginRight: "0.5em" }}>
+                  Add to your server
+                </a>
+              )}
+              {(this.bot.support !== undefined && this.bot.support.length > 0) && (
+                <a className="button" href={this.bot.support} style={{ marginRight: "0.5em" }}>
+                  Support server
+                </a>
+              )}
+              {(this.bot.website !== undefined && this.bot.website.length > 0) && (
+                <a className="button" href={this.bot.website} style={{ marginRight: "0.5em" }}>
+                  Website
+                </a> 
+              )}
+              {(this.bot.twitter !== undefined && this.bot.twitter.length > 0) && (
+                <a className="button" href={this.bot.twitter}>
+                  Twitter
+                </a>
+              )}
+            </p>
+          </div>
+        </div>
+      </div>        
+    )
+  }
+}
+
 class Bots extends Component {
   render() {
     return (
@@ -81,55 +132,10 @@ class Bots extends Component {
               <div className="container">
                 {shuffle(this.props.bots).map(bot => (
                   <div key={bot.id}>
-                    {/*<Link to={`/bots/${bot.id}/`}>{bot.name}</Link>*/}
-                    
                     <div className="" style={{
                       padding: "2em 2em 1em 2em",
                     }}>
-                      <div className="columns">
-                        <div className="column is-narrow">
-                          <img src={bot.image} alt={bot.name + "'s avatar"} style={{
-                            height: "144px"
-                          }} />
-                        </div>
-                        <div className="column content">
-                          <h3>{bot.name}</h3>
-                          <p>{bot.description}</p>
-                          <div className="tags">
-                            {bot.tags.sort().map(tag => (
-                              <span className="tag" key={tag}>{tag}</span>
-                            ))}
-                          </div>
-                          <p>
-                            {(bot.invite !== undefined && bot.invite.length > 0) && (
-                              <a className="button is-info" href={bot.invite} style={{
-                                marginRight: "0.5em"
-                              }}>
-                                Add to your server
-                              </a>
-                            )}
-                            {(bot.support !== undefined && bot.support.length > 0) && (
-                              <a className="button" href={bot.support} style={{
-                                marginRight: "0.5em"
-                              }}>
-                                Support server
-                              </a>
-                            )}
-                            {(bot.website !== undefined && bot.website.length > 0) && (
-                              <a className="button" href={bot.website} style={{
-                                marginRight: "0.5em"
-                              }}>
-                                Website
-                              </a>
-                            )}
-                            {(bot.twitter !== undefined && bot.twitter.length > 0) && (
-                              <a className="button" href={bot.twitter}>
-                                Twitter
-                              </a>
-                            )}
-                          </p>
-                        </div>
-                      </div>
+                      <BotHeader bot={bot} />
                       <hr />
                     </div>
                   </div>
@@ -174,9 +180,28 @@ class Tags extends Component {
 }
 
 class BotProfile extends Component {
+  resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+
+
   render() {
+    let name = this.props.match.params.name;
+    let bot = this.props.bots.filter(bot => bot.name.toLowerCase() === name.toLowerCase())[0];
+
     return (
-      <p>this is a bot profile</p>
+      <div className="columns">
+        <div className="column">
+          <div className="container">
+            <div style={{ padding: "2em 2em 1em 2em" }}>
+              <BotHeader bot={bot} />
+              <hr /> 
+              <iframe src={bot.website} width="100%" height="1000px" />
+              <hr />
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 }
@@ -204,7 +229,7 @@ export default () => (
         <Route exact path="/" render={props => 
           <Index {...props} bots={bots} />
         } />
-        <Route path="/bots/:id" render={props => 
+        <Route path="/bots/:name" render={props => 
           <BotProfile {...props} bots={bots} />
         } />
         <Route path="/:tag" render={props => 
