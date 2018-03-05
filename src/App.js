@@ -195,7 +195,6 @@ class BotProfile extends Component {
           <div className="container">
             <div style={{ padding: "2em 2em 1em 2em" }}>
               <BotHeader bot={bot} />
-              <hr /> 
               <iframe src={bot.website} width="100%" height="1000px" />
               <hr />
             </div>
