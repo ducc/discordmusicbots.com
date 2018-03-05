@@ -173,6 +173,14 @@ class Tags extends Component {
   }
 }
 
+class BotProfile extends Component {
+  render() {
+    return (
+      <p>this is a bot profile</p>
+    )
+  }
+}
+
 const Footer = () => (
   <section className="hero has-text-centered">
     <div className="hero-body">
@@ -195,6 +203,9 @@ export default () => (
         <Features bots={bots} />
         <Route exact path="/" render={props => 
           <Index {...props} bots={bots} />
+        } />
+        <Route path="/bots/:id" render={props => 
+          <BotProfile {...props} bots={bots} />
         } />
         <Route path="/:tag" render={props => 
           <Tags {...props} bots={bots} />
