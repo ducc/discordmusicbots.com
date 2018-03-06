@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
-
+import 'axios'
 import './bulma.css'
-
+import Axios from 'axios';
+const util = require('util')
 const bots = require('./bots.json')
 
 const flatMap = (arr, f) => [].concat.apply([], arr.map(f))
@@ -56,7 +57,7 @@ class Features extends Component {
             }}>
               All features
             </NavLink>
-            {[... new Set(flatMap(this.props.bots.map(bot => bot.tags), tags => tags).sort())].map(tag => (
+            {[...new Set(flatMap(this.props.bots.map(bot => bot.tags), tags => tags).sort())].map(tag => (
               <NavLink className="button" key={tag} to={"/" + tag.toLowerCase()} style={{
                 margin: "0 0.5em 0.5em 0"
               }}>
@@ -75,7 +76,6 @@ class BotHeader extends Component {
   constructor(props) {
     super(props)
     this.bot = this.props.bot
-    console.log("bot: " + JSON.stringify(this.bot))
   }
 
   render() {
@@ -179,11 +179,64 @@ class Tags extends Component {
   }
 }
 
+const BFD_URL = "https://botsfordiscord.com/api/v1/bots/%s"
+
+class BotMeta extends Component {
+  constructor(props) {
+    super(props)
+    this.bot = this.props.bot;
+    this.state = {
+      bfd: {},
+    }
+  }
+
+  async componentDidMount() {
+    let data = await Axios.get(util.format(BFD_URL, this.bot.id)).then(res => {
+      if (res.status !== 200) {
+        return { ok: false, data: null}
+      }
+      return { ok: true, data: res.data }
+    })
+
+    if (data.ok) {
+      this.setState({
+        bfd: data.data,
+      })
+    }
+  }
+
+  render() {
+    if (!this.state.bfd || Object.keys(this.state.bfd).length === 0) {
+      return null
+    }
+
+    return (
+      <div className="">
+        <p>Bot meta information (provided by <a href="https://botsfordiscord.com">botsfordiscord.com</a>):</p>
+        <br />
+        <p>
+          <BotMetaItem name="server count" value={this.state.bfd.count} />
+          <BotMetaItem name="prefix" value={this.state.bfd.prefix} />
+          <BotMetaItem name="id" value={this.state.bfd.id} />  
+          <BotMetaItem name="owner id" value={this.state.bfd.owner} />  
+        </p>
+        <br />
+      </div>
+    )
+  }
+}
+
+const BotMetaItem = (props) => (
+  <div className="tags has-addons" style={{ display: "inline", marginRight: "1em" }}>
+    <span className="tag is-dark">{props.name}</span>
+    <span className="tag">{props.value}</span>
+  </div>
+)
+
 class BotProfile extends Component {
   resizeIframe(obj) {
     obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
   }
-
 
   render() {
     let name = this.props.match.params.name;
@@ -195,6 +248,7 @@ class BotProfile extends Component {
           <div className="container">
             <div style={{ padding: "2em 2em 1em 2em" }}>
               <BotHeader bot={bot} />
+              <BotMeta bot={bot} />
               <iframe src={bot.website} width="100%" height="1000px" />
               <hr />
             </div>
