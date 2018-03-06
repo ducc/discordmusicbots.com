@@ -6,22 +6,9 @@ import './bulma.css'
 import Axios from 'axios';
 const util = require('util')
 const bots = require('./bots.json')
+const shuffle = require('shuffle-array')
 
 const flatMap = (arr, f) => [].concat.apply([], arr.map(f))
-
-const shuffle = (array) => {
-  var currentIndex = array.length, temporaryValue, randomIndex
-  
-  while (0 !== currentIndex) {
-    randomIndex = Math.floor(Math.random() * currentIndex)
-    currentIndex -= 1
-    temporaryValue = array[currentIndex]
-    array[currentIndex] = array[randomIndex]
-    array[randomIndex] = temporaryValue
-  }
-
-  return array
-}
 
 const Header = () => (
   <div>
@@ -43,6 +30,8 @@ const Header = () => (
 
 class Features extends Component {
   render() {
+    let tags = [...new Set(flatMap(this.props.bots.map(bot => bot.tags), tags => tags).sort())];
+
     return (
       <div className="container">
         <div className="" style={{
@@ -57,7 +46,7 @@ class Features extends Component {
             }}>
               All features
             </NavLink>
-            {[...new Set(flatMap(this.props.bots.map(bot => bot.tags), tags => tags).sort())].map(tag => (
+            {tags.map(tag => (
               <NavLink className="button" key={tag} to={"/" + tag.toLowerCase()} style={{
                 margin: "0 0.5em 0.5em 0"
               }}>
@@ -79,6 +68,8 @@ class BotHeader extends Component {
   }
 
   render() {
+    let tags = this.bot.tags.sort()
+
     return (
       <div className="columns">
         <div className="column is-narrow">
@@ -89,7 +80,7 @@ class BotHeader extends Component {
             <NavLink to={"/bots/" + this.bot.name.toLowerCase()}><h3>{this.bot.name}</h3></NavLink>
             <p>{this.bot.description}</p>
             <div className="tags">
-              {this.bot.tags.sort().map(tag => (
+              {tags.map(tag => (
                 <span className="tag" key={tag}>{tag}</span>
               ))}
             </div>
@@ -124,13 +115,15 @@ class BotHeader extends Component {
 
 class Bots extends Component {
   render() {
+    let bots = shuffle(this.props.bots);
+
     return (
       <div>
         <div className="columns">
           <div className="column">
             <section>
               <div className="container">
-                {shuffle(this.props.bots).map(bot => (
+                {bots.map(bot => (
                   <div key={bot.id}>
                     <div className="" style={{
                       padding: "2em 2em 1em 2em",
