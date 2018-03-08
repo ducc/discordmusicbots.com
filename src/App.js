@@ -210,8 +210,8 @@ class BotMeta extends Component {
         <p>
           <BotMetaItem name="server count" value={this.state.bfd.count} />
           <BotMetaItem name="prefix" value={this.state.bfd.prefix} />
-          <BotMetaItem name="id" value={this.state.bfd.id} />  
-          <BotMetaItem name="owner id" value={this.state.bfd.owner} />  
+          <BotMetaItem name="owner" value={this.state.bfd.ownername} />
+          <BotMetaItem name="bot id" value={this.state.bfd.id} />  
         </p>
         <br />
       </div>
