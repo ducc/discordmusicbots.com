@@ -220,4 +220,16 @@
     "support": "https://is.gd/mantaroguild",
     "website": "https://github.com/Mantaro/MantaroBot",
     "twitter": "https://twitter.com/mantarodiscord"
+},
+{
+    "id": 300018853830721538,
+    "name": "Prisma",
+    "image": "https://cdn.discordapp.com/avatars/300018853830721538/8679c163d8858a296bffb952a8c4d264.png?size=512",
+    "description": "An extremely light weight bot, with a lot pre-packaged features included.",
+    "tags": [
+        "Youtube"
+    ],
+    "invite": "https://prisma.mayo.pw/invite",
+    "support": "https://prisma.mayo.pw/server",
+    "website": "https://prisma.mayo.pw/"
 }]
