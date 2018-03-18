@@ -220,4 +220,20 @@
     "support": "https://is.gd/mantaroguild",
     "website": "https://github.com/Mantaro/MantaroBot",
     "twitter": "https://twitter.com/mantarodiscord"
+},
+{
+    "id": "356355632166600724",
+    "name": "DonutBot",
+    "image": "https://cdn.discordapp.com/avatars/356355632166600724/11aec208ba1c1205e56962f9e869176b.png?size=512",
+    "description": "The Jam Packed Discord Bot | 128 Bitrate Audio | Currency system | Games | Information | Server Moderation | All in one bot ♥",
+    "tags": [
+        "Youtube",
+        "Soundcloud",
+        "Twitch",
+        "Playlists"
+    ],
+    "invite": "https://donutbot.us/invite",
+    "support": "https://donutbot.us/support",
+    "website": "https://donutbot.us",
+    "twitter": "https://twitter.com/ItsDonutBot"
 }]
