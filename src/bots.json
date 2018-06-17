@@ -236,4 +236,24 @@
     "support": "https://donutbot.us/support",
     "website": "https://donutbot.us",
     "twitter": "https://twitter.com/ItsDonutBot"
+},
+{
+    "id": "303181184718995457",
+    "name": "PenguBot",
+    "image": "https://i.imgur.com/fDr5jd8.png",
+    "description": "Mutli-Purpose Bot with Powerful Music (Live Streams, HQ, Lyrics, etc), Social Profiles, Economy, Server Moderation, Utilities, Fun and Much More!",
+    "tags": [
+        "Youtube",
+        "Soundcloud",
+        "Twitch",
+        "Playlists",
+        "Http",
+        "Lyrics",
+        "Playlists",
+        "Mp3"
+    ],
+    "invite": "https://www.pengubot.com/invite",
+    "support": "https://www.pengubot.com/support",
+    "website": "https://www.pengubot.com/",
+    "twitter": "https://twitter.com/PenguBot"
 }]
