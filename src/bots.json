@@ -36,6 +36,24 @@
     "twitter": "https://twitter.com/DiscordFredBoat"
 },
 {
+    "id": "375752406727786498",
+    "name": "Kyoko",
+    "image": "https://images.discordapp.net/avatars/375750637540868107/c3882bb86ac7faab5e502c3ff2c5296e.png?size=512",
+    "description": "Feature-rich and easy to use music bot.",
+    "tags": [
+        "Youtube",
+        "Soundcloud",
+        "Playlists",
+        "Soundcloud",
+        "Twitch",
+        "NicoNico",
+        "Filters"
+    ],
+    "invite": "https://kyokobot.moe/invite",
+    "support": "https://discord.gg/ZvDRQf7",
+    "website": "https://kyokobot.moe"
+},
+{
     "id": "235088799074484224",
     "name": "Rythm",
     "image": "https://rythmbot.co/rythm.png",
