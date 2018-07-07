@@ -1,4 +1,23 @@
 [{
+    "id": "267035345537728512",
+    "name": "Bastion",
+    "image": "https://resources.bastionbot.org/logos/bastion_solid_blurple.png",
+    "description": "Bastion is a multi purpose Discord bot which also proves high quality music streaming from a whole lot of sources! You can control the music any way you want, view lyrics, create custom playlists and much more!",
+    "tags": [
+        "Youtube",
+        "Soundcloud",
+        "Lyrics",
+        "Playlists",
+        "Twitch",
+        "Airhorn",
+        "Self-Hosted"
+    ],
+    "invite": "https://discordapp.com/oauth2/authorize?client_id=267035345537728512&scope=bot&permissions=2146958463",
+    "support": "https://discord.gg/fzx8fkt",
+    "website": "https://bastionbot.org",
+    "twitter": "https://twitter.com/TheBastionBot"
+},
+{
     "id": "270198738570444801",
     "name": "dabBot",
     "image": "https://images.discordapp.net/avatars/270198738570444801/70e848794770b131a6a846b076003739.png?size=512",
