@@ -98,11 +98,12 @@
 },
 {
     "id": "234395307759108106",
-    "name": "Marv",
-    "image": "https://cdn.discordapp.com/avatars/234395307759108106/4204ef4a5375f064e6cccc8e4d994b05.png",
-    "description": "An incredibly easy-to-use music bot with high quality audio :^)",
+    "name": "Groovy",
+    "image": "https://cdn.discordapp.com/avatars/234395307759108106/18b02cc3f97331485a6fd7dfd3106be5.png",
+    "description": "A simple music bot that supports YouTube, Spotify, Soundcloud and more!",
     "tags": [
         "Spotify",
+        "Apple Music",
         "Lyrics",
         "Youtube",
         "Soundcloud",
@@ -111,9 +112,9 @@
         "Mp3",
         "Http"
     ],
-    "invite": "https://marv.land/invite",
+    "invite": "https://discordapp.com/oauth2/authorize?scope=bot&client_id=234395307759108106&permissions=37080136&redirect_uri=https%3A%2F%2Fsupport.groovy.bot%2Fi29&response_type=code",
     "support": "https://discord.gg/WmDyx7C",
-    "website": "https://marv.land"
+    "website": "https://groovy.bot"
 },
 {
     "id":"228537642583588864",
