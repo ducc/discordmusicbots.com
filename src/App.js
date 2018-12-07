@@ -172,7 +172,7 @@ class Tags extends Component {
   }
 }
 
-const BFD_URL = "https://botsfordiscord.com/api/v1/bots/%s"
+const BFD_URL = "https://botsfordiscord.com/api/bot/%s"
 
 class BotMeta extends Component {
   constructor(props) {
@@ -208,9 +208,9 @@ class BotMeta extends Component {
         <p>Bot meta information (provided by <a href="https://botsfordiscord.com">botsfordiscord.com</a>):</p>
         <br />
         <p>
-          <BotMetaItem name="server count" value={this.state.bfd.count} />
+          <BotMetaItem name="server count" value={this.state.bfd.server_count} />
           <BotMetaItem name="prefix" value={this.state.bfd.prefix} />
-          <BotMetaItem name="owner" value={this.state.bfd.ownername} />
+          <BotMetaItem name="owner" value={this.state.bfd.owner} />
           <BotMetaItem name="bot id" value={this.state.bfd.id} />  
         </p>
         <br />
